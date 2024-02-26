@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body onload="widthCheck()">
+    <div id="sign-up-wrapper">
+      <section id="sign-up">
+        <div class="messaging-wrapper">
+          <p class="sign-up-heading">
+            Stay updated!
+          </p>
+          
+          <p class="inner-text">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+
+          <div class="list-wrapper">
+            <div class="list-group">
+              <img src="./assets/images/icon-list.svg" alt="Checkmark SVG" class="update-list-svg">
+              <p class="list-item">Product discovery and building what matters</p>
+            </div>
+            <div class="list-group">
+              <img src="./assets/images/icon-list.svg" alt="Checkmark SVG" class="update-list-svg">
+              <p class="list-item">Measuring to ensure updates are a success</p>
+            </div>
+            <div class="list-group">
+              <img src="./assets/images/icon-list.svg" alt="Checkmark SVG" class="update-list-svg">
+              <p class="list-item">And much more!</p>
+            </div>
+          </div>
+        </div>
+        
+        <form id="signup-form" action="">
+          <div class="form-heading fw-700">
+            <p class="form-label">Email address</p>
+            <p id="form-error">
+              Valid email required.
+            </p>
+          </div>
+  
+          <input id="email" type="text" placeholder="email@company.com" class="form-input">  
+          <button type="submit" class="dark-button fw-700" id="signup-button">Subscribe to monthly newsletter</button>
+        </form>
+      </section>
+    
+      <section id="section-image">
+        <img id="illustration-image" src="" alt="Desktop Illustration Sign Up Image">
+      </section>
+    </div>
+    
+    <section id="success-message-wrapper">
+      <img class="success-img" src="./assets/images/icon-success.svg" alt="Success Checkmark">
+
+      <h1 class="fw-700 success-heading">
+        Thanks for subscribing!
+      </h1>
+      
+      <p class="inner-text-success fw-400">
+        A confirmation email has been sent to <span id="success-email" class="fw-700">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+
+      <button class="dark-button fw-700" id="dismiss-button">
+        Dismiss message
+      </button>
+    </section>  
+
+    
+    
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.frontendmentor.io/profile/david-mohlis">David Mohlis</a>.
+      </div>
+  </footer>
+  <script src="./assets/scripts/app.js"></script>
+</body>
+</html>
